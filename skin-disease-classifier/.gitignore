@@ -1,0 +1,75 @@
+# ==========================================
+# 1. Virtual Environments & Packages
+# ==========================================
+venv/
+.venv/
+env/
+.env
+bin/
+lib/
+include/
+share/
+pyvenv.cfg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==========================================
+# 2. Datasets (NEVER commit large data to Git)
+# ==========================================
+# Excludes raw images, zip files, CSVs, and data folders
+data/
+datasets/
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.csv
+*.tsv
+*.h5
+*.hdf5
+
+# ==========================================
+# 3. Model Checkpoints & Weights
+# ==========================================
+# Excludes heavy trained model files, logs, and pickles
+models/
+checkpoints/
+weights/
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.onnx
+*.pb
+*.tflite
+
+# ==========================================
+# 4. Jupyter Notebooks & Outputs
+# ==========================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+# Optional: Uncomment the line below if you don't want to track notebook run checkpoints
+# .pytest_cache/
+
+# ==========================================
+# 5. Logs & Experiment Tracking
+# ==========================================
+runs/
+logs/
+*.log
+tensorboard/
+.wandb/
+wandb/
+mlruns/
+
+# ==========================================
+# 6. Python & OS System Garbage
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
